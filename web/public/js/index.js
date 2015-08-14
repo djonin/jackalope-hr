@@ -74,9 +74,13 @@ $(document).ready(function() {
 	});
 
 	cse.setOnProjectComplete(function(id) {
-		elemStorage[id].elem.remove;
-		delete elemStorage[id];
-		delete projStorage[id];
+		if(elemStorage[id]) {
+			elemStorage[id].elem.remove();
+			delete elemStorage[id];
+		}
+		if(projStorage[id]) {
+			delete projStorage[id];
+		}
 	});
 });
 
