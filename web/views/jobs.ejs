@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jackalope</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<section class="container">
+    <div class="jumbotron">
+        <div class="media">
+            <div class="media-body">
+                <h1>Welcome to Jackalope</h1>
+                <p>
+                    An image processing service.
+                    Input an image url, select your transforms, and submit.
+                    Then prepare to be amazed!
+                </p>
+            </div>
+
+            <div class="media-left media-middle">
+                <img class="media-object jackalope-logo" src="/assets/jackalope.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="form-group">
+        <label for="imageUrl">Image Url</label>
+        <input id="imageUrlInput" type="text" class="form-control" />
+    </div>
+
+    <div id="transformButtons" class="form-group">
+        <button type="button" class="btn btn-default" value="grayscale">Grayscale</button>
+        <button type="button" class="btn btn-default" value="pixelate">Pixelate</button>
+        <button type="button" class="btn btn-default" value="blur">Blur</button>
+        <button type="button" class="btn btn-default" value="cartoon">Cartoonize</button>
+        <button type="button" class="btn btn-default" value="highlight">Highlight</button>
+        <button type="button" class="btn btn-default" value="mustache">Mustache</button>
+    </div>
+
+    <div id="transformsInput" class="transforms-list">
+        <!-- Dynamically created -->
+    </div>
+
+    <button id="clearRequest" class="btn btn-default">Clear</button>
+    <button id="submitRequest" class="btn btn-primary">Submit</button>
+</section>
+
+<section id="processingJobs" class="container">
+    <!-- Dynamically created -->
+</section>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.socket.io/socket.io-1.3.5.js"></script>
+<script src="/js/jobs.js"></script>
+</body>
+</html>

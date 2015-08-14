@@ -1,0 +1,22 @@
+{
+  "name": "jackalope",
+  "version": "1.0.0",
+  "authors": [
+    "Nick Ferraro <nick.ferraro@hackreactor.com>"
+  ],
+  "description": "A web server that utilizes a worker queue for data processing",
+  "main": "none.js",
+  "license": "Proprietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
