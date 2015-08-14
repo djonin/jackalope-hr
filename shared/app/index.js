@@ -18,6 +18,7 @@ module.exports = JackalopeApp;
 function JackalopeApp() {
     var appInstance = this;
     var mongoUrl = config.get('mongo.url');
+    console.log(mongoUrl);
     var jackrabbitUrl = config.get('jackrabbit.url');
     var pending = Promise.pending();
     var readyConnections = {
