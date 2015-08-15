@@ -25,3 +25,9 @@ body {
     padding-top: 14px;
     padding-bottom: 14px;
 }
+
+.pendingProcess {
+    border: solid 1px;
+    border-radius: 5px;
+    margin: 5px;
+}
