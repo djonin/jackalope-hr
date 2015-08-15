@@ -45,3 +45,5 @@ config/*
 !config/default.js
 !config/development.example.js
 !config/production.js
+
+web/public/js/bundle.min.js
